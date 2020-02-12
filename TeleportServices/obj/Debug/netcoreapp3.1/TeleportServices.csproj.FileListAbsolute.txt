@@ -1,0 +1,11 @@
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.csprojAssemblyReference.cache
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.AssemblyInfoInputs.cache
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.AssemblyInfo.cs
+C:\interview\AmmaDeyyus\TeleportServices\bin\Debug\netcoreapp3.1\TeleportServices.deps.json
+C:\interview\AmmaDeyyus\TeleportServices\bin\Debug\netcoreapp3.1\TeleportServices.dll
+C:\interview\AmmaDeyyus\TeleportServices\bin\Debug\netcoreapp3.1\TeleportServices.pdb
+C:\interview\AmmaDeyyus\TeleportServices\bin\Debug\netcoreapp3.1\HttpServices.dll
+C:\interview\AmmaDeyyus\TeleportServices\bin\Debug\netcoreapp3.1\HttpServices.pdb
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.csproj.CopyComplete
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.dll
+C:\interview\AmmaDeyyus\TeleportServices\obj\Debug\netcoreapp3.1\TeleportServices.pdb

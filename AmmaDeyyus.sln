@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmmaDeyyus", "AmmaDeyyus\AmmaDeyyus.csproj", "{A8577EA6-4314-44C4-BE93-FE1B01EA39F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTeleportTest", "AmmaDeyyus\CTeleportTest.csproj", "{A8577EA6-4314-44C4-BE93-FE1B01EA39F6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpServices", "HttpServices\HttpServices.csproj", "{38429345-8681-4EDB-879C-C9966FA05B39}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeleportServices", "TeleportServices\TeleportServices.csproj", "{9AC08D98-97C7-4DDB-B1F9-A35728CEE4DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpServices.Tests", "HttpServices.Tests\HttpServices.Tests.csproj", "{216A68B1-8AF8-4BEB-82C0-98C9CDBB7A09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpServices.Tests", "HttpServices.Tests\HttpServices.Tests.csproj", "{216A68B1-8AF8-4BEB-82C0-98C9CDBB7A09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeleportServices.Tests", "TeleportServices.Tests\TeleportServices.Tests.csproj", "{3DD212DA-03BA-4975-B095-391B3CDB798F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeleportServices.Tests", "TeleportServices.Tests\TeleportServices.Tests.csproj", "{3DD212DA-03BA-4975-B095-391B3CDB798F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

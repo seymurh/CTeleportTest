@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Lamar;
-using AmmaDeyyus.QueryHandlers;
+using CTeleportTest.QueryHandlers;
 using HttpServices;
 using TeleportServices;
-using AmmaDeyyus.Configurations;
-using AmmaDeyyus.QueryHandlers.Common;
+using CTeleportTest.Configurations;
+using CTeleportTest.QueryHandlers.Common;
 using TeleportServices.Models;
 
-namespace AmmaDeyyus
+namespace CTeleportTest
 {
     public class Program
     {

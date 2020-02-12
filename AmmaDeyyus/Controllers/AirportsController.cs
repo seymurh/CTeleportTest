@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using AmmaDeyyus.QueryHandlers.Common;
+using CTeleportTest.QueryHandlers.Common;
 using Microsoft.AspNetCore.Mvc;
 using TeleportServices.Models;
 
-namespace AmmaDeyyus.Controllers
+namespace CTeleportTest.Controllers
 {
     [ApiController]
     [Route("[controller]")]

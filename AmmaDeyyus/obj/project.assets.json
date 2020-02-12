@@ -6052,9 +6052,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\interview\\AmmaDeyyus\\AmmaDeyyus\\AmmaDeyyus.csproj",
-      "projectName": "AmmaDeyyus",
-      "projectPath": "C:\\interview\\AmmaDeyyus\\AmmaDeyyus\\AmmaDeyyus.csproj",
+      "projectUniqueName": "C:\\interview\\AmmaDeyyus\\AmmaDeyyus\\CTeleportTest.csproj",
+      "projectName": "CTeleportTest",
+      "projectPath": "C:\\interview\\AmmaDeyyus\\AmmaDeyyus\\CTeleportTest.csproj",
       "packagesPath": "C:\\Users\\seymurhus\\.nuget\\packages\\",
       "outputPath": "C:\\interview\\AmmaDeyyus\\AmmaDeyyus\\obj\\",
       "projectStyle": "PackageReference",

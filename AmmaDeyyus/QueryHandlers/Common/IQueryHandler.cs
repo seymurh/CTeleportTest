@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace AmmaDeyyus.QueryHandlers.Common
+namespace CTeleportTest.QueryHandlers.Common
 {
     public interface IQueryHandler
     {

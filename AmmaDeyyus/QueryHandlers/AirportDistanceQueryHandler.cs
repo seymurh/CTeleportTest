@@ -1,11 +1,11 @@
-﻿using AmmaDeyyus.QueryHandlers.Common;
+﻿using CTeleportTest.QueryHandlers.Common;
 using System;
 using System.Threading.Tasks;
 using TeleportServices;
 using TeleportServices.Models;
 
 
-namespace AmmaDeyyus.QueryHandlers
+namespace CTeleportTest.QueryHandlers
 {
     public class AirportDistanceQueryHandler : IQuery<GetAirportDistanceRequest, double>
     {

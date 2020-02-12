@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using TeleportServices;
 
-namespace AmmaDeyyus.Configurations
+namespace CTeleportTest.Configurations
 {
     public class TeleportServicesSettings : ITeleportServicesSettings
     {

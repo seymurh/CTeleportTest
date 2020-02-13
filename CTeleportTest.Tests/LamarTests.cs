@@ -1,7 +1,6 @@
 using System;
 using Xunit;
 using Lamar;
-using Microsoft.Extensions.DependencyInjection;
 using CTeleportTest.QueryHandlers;
 using CTeleportTest.QueryHandlers.Common;
 using TeleportServices.Models;

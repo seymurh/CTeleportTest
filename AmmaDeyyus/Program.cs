@@ -4,12 +4,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Lamar;
-using CTeleportTest.QueryHandlers;
-using HttpServices;
-using TeleportServices;
 using CTeleportTest.Configurations;
-using CTeleportTest.QueryHandlers.Common;
-using TeleportServices.Models;
+using Microsoft.AspNetCore;
 
 namespace CTeleportTest
 {
@@ -17,39 +13,31 @@ namespace CTeleportTest
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder2(args).Build().Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    ServiceRegistry serviceRegistry = null;
-                    webBuilder.ConfigureServices(services =>
-                    {
-                        serviceRegistry = new ServiceRegistry(services);
-                        serviceRegistry.AddControllers();
-                        serviceRegistry.AddSwaggerDocument();
-                        serviceRegistry.AddTransient<IHttpService, HttpService>();
-                        serviceRegistry.AddTransient<IAirportService, AirportService>();
-                        serviceRegistry.AddTransient<ITeleportServicesSettings, TeleportServicesSettings>();
-                        serviceRegistry.AddSingleton<IQueryHandler, QueryHandler>();
-                        serviceRegistry.AddTransient<IQuery<GetAirportDistanceRequest, double>, AirportDistanceQueryHandler>();
+        //public static IHostBuilder CreateHostBuilder(string[] args) =>
+        //    Host.CreateDefaultBuilder(args)
+        //        .ConfigureWebHostDefaults(webBuilder =>
+        //        {
+        //            ServiceRegistry serviceRegistry = null;
+        //            webBuilder.ConfigureServices(services =>
+        //            {
+        //                serviceRegistry = new ServiceRegistry(services);
+        //                serviceRegistry.AddControllers();
+        //                serviceRegistry.AddSwaggerDocument();
+        //                serviceRegistry.IncludeRegistry<CTeleportServiceRegistry>();
+        //                serviceRegistry.AddAuthorization();
+        //                services.AddLamar(serviceRegistry);
+        //            });
 
-                        serviceRegistry.Scan(s =>
-                        {
-                            s.ConnectImplementationsToTypesClosing(typeof(IQuery<,>));
-                            s.TheCallingAssembly();
-                            s.SingleImplementationsOfInterface();
-                            s.WithDefaultConventions();
-                        });
+        //            webBuilder.UseLamar(serviceRegistry);
+        //            webBuilder.UseStartup<Startup>();
+        //        });
 
-                        serviceRegistry.AddAuthorization();
-                        services.AddLamar(serviceRegistry);
-                    });
-
-                    webBuilder.UseLamar(serviceRegistry);
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IWebHostBuilder CreateHostBuilder2(string[] args) =>
+        WebHost.CreateDefaultBuilder(args)
+            .UseLamar()
+            .UseStartup<Startup>();
     }
 }

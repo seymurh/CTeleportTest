@@ -1,6 +1,9 @@
+using CTeleportTest.Configurations;
+using Lamar;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 namespace CTeleportTest
@@ -13,6 +16,14 @@ namespace CTeleportTest
         }
 
         public IConfiguration Configuration { get; }
+
+        public void ConfigureContainer(ServiceRegistry serviceRegistry)
+        {
+            serviceRegistry.AddControllers();
+            serviceRegistry.AddSwaggerDocument();
+            serviceRegistry.IncludeRegistry<CTeleportServiceRegistry>();
+            serviceRegistry.AddAuthorization();
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
